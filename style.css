@@ -1019,6 +1019,7 @@ nav {
 .habit_card_parent{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 30px;
 }
 
 .habit_card{
@@ -1044,3 +1045,30 @@ text-align: center;
 
 
 /* responsive habit design */
+
+@media(max-width:576px){
+    .habit_card_parent{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .habit_title {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+      }
+      
+    
+.habit {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 54px;
+    padding-top:10px;
+  }
+}
