@@ -981,6 +981,135 @@ nav {
   }
 }
 
+@media ((min-width: 992px) and (max-width:1102px)) {
+  .banner_ticket_1 {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 1.5rem;
+    position: absolute;
+    left: 580px;
+    top: 580px;
+  }
+  .banner_ticket_2 {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding: 0.625rem 1.5rem;
+    position: absolute;
+    left: 720px;
+    top: 280px;
+  }
+
+  .ticket_1_circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+  }
+  .banner_ticket_title {
+    color: rgb(250, 250, 249);
+
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .banner_ticket_para {
+    color: rgba(239, 237, 232, 0.65);
+
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .banner_ticket_title_2 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    letter-spacing: 0.0625rem;
+    text-align: left;
+  }
+}
+@media ((min-width: 1102.1px) and (max-width:1300px)) {
+  .banner_ticket_1 {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 1.5rem;
+    position: absolute;
+    left: 680px;
+    top: 580px;
+  }
+  .banner_ticket_2 {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding: 0.625rem 1.5rem;
+    position: absolute;
+    left: 820px;
+    top: 280px;
+  }
+
+  .ticket_1_circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+  }
+  .banner_ticket_title {
+    color: rgb(250, 250, 249);
+
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .banner_ticket_para {
+    color: rgba(239, 237, 232, 0.65);
+
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .banner_ticket_title_2 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    letter-spacing: 0.0625rem;
+    text-align: left;
+  }
+}
+
 /* HABIT SECTION DESIGN START */
 
 .habit {
@@ -1353,7 +1482,7 @@ nav {
 }
 
 /* BMi intro*/
-.bmi_intro{
+.bmi_intro {
   margin: 50px;
 }
 .bmi_content {
@@ -1382,7 +1511,50 @@ nav {
 
 /* start bmi  */
 
-.chart{
+.bmi_form_parent_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+.bmi_form_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.input_row_1 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.input_row_2 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.input_row_3 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+.bmi_form_parent {
+  display: none;
+}
+.chart {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1390,11 +1562,12 @@ nav {
   gap: 52px;
 }
 
-.bmi{
+.bmi {
+  width: 100%;
   background: rgb(34, 34, 34);
- 
+  margin: 0 auto;
 }
-.form_chart{
+.form_chart {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1402,36 +1575,36 @@ nav {
   justify-content: center;
   margin: 0 auto;
   padding: 50px;
+  gap: 30px;
 }
 
-.chart h3{
+.chart h3 {
   color: rgb(255, 255, 255);
-font-family: Inter;
-font-size: 28px;
-font-weight: 900;
-line-height: 120%;
-letter-spacing: 0%;
-text-align: left;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
 }
-
 
 table {
   color: white;
   width: 100%;
   border-collapse: collapse;
   width: 310px;
-height: 216px;
+  height: 216px;
 }
-th{
+th {
   color: rgb(255, 255, 255);
-font-family: Inter;
-font-size: 16px;
-font-weight: 500;
-line-height: 120%;
-letter-spacing: 0%;
-text-align: left;
-border: 1px solid rgba(255, 255, 255, 0.1);
-padding: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px;
 }
 td {
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1439,16 +1612,15 @@ td {
   text-align: left;
 
   color: rgba(255, 255, 255, 0.5);
-font-family: Inter;
-font-size: 14px;
-font-weight: 400;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
 
-text-align: left;
+  text-align: left;
 }
 
-
-
-.bmi_form_parent{
+.bmi_form_parent {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1456,71 +1628,67 @@ text-align: left;
   gap: 20px;
 }
 
-
-.form_title{
+.form_title {
   color: rgb(255, 255, 255);
-font-family: Inter;
-font-size: 28px;
-font-weight: 900;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 900;
 
-text-align: left;
+  text-align: left;
 }
 
-.form_para{
+.form_para {
   color: rgba(255, 255, 255, 0.5);
-font-family: Inter;
-font-size: 14px;
-font-weight: 400;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
 
-text-align: left;
+  text-align: left;
 }
 
-.height{
+/* .height {
   grid-area: height;
 }
 
-.weight{
+.weight {
   grid-area: weight;
 }
 
-.age{
+.age {
   grid-area: age;
 }
 
-.sex{
+.sex {
   grid-area: sex;
 }
 
-.factor{
+.factor {
   grid-area: factor;
-}
+} */
 
-
-
-
-
-.bmi_form{
+.bmi_form {
   display: grid;
- grid-template-areas: 
- "height weight"
- "age sex"
- "factor factor";
+  grid-template-areas:
+    "height weight"
+    "age sex"
+    "factor factor";
 
- gap: 10px;
+  gap: 10px;
 }
 
-.input_item{
+.input_item {
+  width: 100%;
   padding: 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
-font-size: 16px;
-font-weight: 400;
-border: none;
-text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  text-align: left;
 }
 
-.bmi_btn{
+.bmi_btn {
   border-radius: 2.625rem;
   background: rgb(230, 83, 60);
   padding: 10px 40px;
@@ -1530,10 +1698,91 @@ text-align: left;
   border: none;
 }
 
-.option{
+.option {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.75rem;
   backdrop-filter: blur(20px);
-  background: rgba(48, 48, 48, 0.54);
-  color: white;
+  background: black;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+option:hover {
+  background-color: #a5d6a7; /* Custom color for hover */
+}
+
+.select {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .form_chart {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px;
+    gap: 30px;
+  }
+
+  .bmi_form_parent_2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+  }
+  .bmi_form_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .input_row_1 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .input_row_2 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .input_row_3 {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form_title {
+    font-size: 16px;
+    font-weight: 900;
+
+    text-align: left;
+  }
+  /* .input_item {
+   width: 120px;
+  } */
+
+  .chart_title {
+    font-size: 32px;
+
+    text-align: left;
+  }
 }

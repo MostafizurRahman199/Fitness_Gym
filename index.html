@@ -173,7 +173,7 @@
              
                 <div class="form_chart">
                     <div class="chart">
-                        <h3>BMI Calculator Chart</h3>
+                        <h3 class="chart_title">BMI Calculator Chart</h3>
                         <table>
                             <thead>
                                 <tr>
@@ -203,24 +203,31 @@
                         </table>
                     </div>
 
-                    <div class="bmi_form_parent">
+              
+                    <div class="bmi_form_parent_2 ">
                         <h3 class="form_title">Calculate your BMI</h3>
                         <p class="form_para">
                             We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. 
                         </p>
-                        <div class="bmi_form">
+                        <div class="bmi_form_2">
+                           <div class="input_row_1">
                             <input type="text" class="height input_item" placeholder="Height/cm">
 
                             <input type="text" class="weight input_item" placeholder="Weight/kg">
+                           </div>
                            
+                           <div class="input_row_2">
                             <input type="text" class="age input_item" placeholder="Age">
 
-                            <select name="" id="" class="input_item select sex" placeholder="sex">
+                            <select name="" id="" class="input_item select sex input_item" placeholder="sex">
                                 <option value="" class="option">Male</option>
                                 <option value="" class="option">Female</option>
                                
                             </select>
-                            <select name="" id="" class="input_item select factor">
+                           </div>
+
+                           <div class="input_row_3">
+                            <select name="" id="" class="input_item select factor input_item">
                                 <option value="sedentary" class="option">Sedentary</option>
                                 <option value="lightly-active" class="option">Lightly Active</option>
                                 <option value="moderately-active" class="option">Moderately Active</option>
@@ -228,6 +235,7 @@
                                 <option value="extra-active" class="option">Extra Active</option>
                                
                             </select>
+                           </div>
 
                             <button class="bmi_btn">Calculate</button>
                         </div>
