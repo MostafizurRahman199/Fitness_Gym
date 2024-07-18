@@ -1720,6 +1720,55 @@ option:hover {
 }
 
 @media (max-width: 576px) {
+
+  .bmi_content_title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: left;
+  }
+  
+  .chart h3 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 900;
+
+  }
+  
+  table {
+    color: white;
+    max-width: 80%;
+    border-collapse: collapse;
+
+    height: 216px;
+  }
+  th {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+  }
+  td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    text-align: left;
+  
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+  
+    text-align: left;
+  }
+
+
   .form_chart {
     width: 80%;
     display: grid;
@@ -1730,6 +1779,23 @@ option:hover {
     padding: 50px;
     gap: 30px;
   }
+
+  table {
+    color: white;
+    width: 30%;
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+  }
+
+  /* .chart{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  } */
 
   .bmi_form_parent_2 {
     width: 90%;
@@ -1831,13 +1897,19 @@ text-align: center;
 
 
 .team_img_div_parent{
+  width: 83%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(2,1fr);
-  grid-gap: 20px;
+  grid-row-gap: 12px;
+ 
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.1);
   padding: 16px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
 }
 
 .team_img_div{
@@ -1907,4 +1979,33 @@ text-align: center;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/trainer6.png");
  
+}
+
+
+@media(max-width:576px){
+
+.team_title{
+  font-size: 1.875rem;
+}
+
+
+  .team_img_div_parent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px;
+  }
+
+  .team_img_div{
+   width: 100%;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 20px;
+  }
 }
