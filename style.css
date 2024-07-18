@@ -1072,3 +1072,130 @@ text-align: center;
     padding-top:10px;
   }
 }
+
+
+/* run section start from here */
+
+.run{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 18px;
+
+    background: rgb(34, 34, 34);
+    padding: 41px 54px;
+    margin-top: 100px;
+}
+
+.run_parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+
+}
+
+.run_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  
+}
+.run_title{
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 48px;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.run_para{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: left;
+}
+
+.run_btn{
+    border-radius: 2.625rem;
+    background: rgb(230, 83, 60);
+    padding: 10px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
+.run_img_div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.run_img{
+width: 366px;
+height: 312px;
+border-radius: 18px;
+object-fit: cover; 
+object-position: center center; 
+
+}
+.run_img_2{
+    display: none;
+}
+
+@media(max-width:576px){
+  .run{
+    width: 90%;
+  }  
+.run_parent{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+
+}
+.run_img_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.run_img{
+    display: none;
+}
+.run_img_2{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    object-fit: cover; 
+    object-position: center center; 
+    
+    }
+
+    .run_title{
+        color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+
+    .run_btn{
+        border-radius: 2.625rem;
+        background: rgb(230, 83, 60);
+        padding: 10px 30px;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        width: 90%;
+    }
+}
